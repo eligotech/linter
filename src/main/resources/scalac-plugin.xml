@@ -1,0 +1,4 @@
+<plugin>
+<name>linter</name>
+<classname>com.eligotech.lint.LinterPlugin</classname>
+</plugin>
