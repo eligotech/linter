@@ -2,7 +2,7 @@ import sbt._
 import Keys._
 
 object ApplicationDependencies {
-  lazy val ScalaVer = "2.9.1"
+  lazy val ScalaVer = "2.9.2"
 }
 
 object BuildSettings {
@@ -27,7 +27,7 @@ object ApplicationBuild extends Build {
 
   val appDependencies = Seq(
     "org.scala-lang"  % "scala-compiler"  % ScalaVer,
-    "org.scala-tools.testing" %% "specs"           % "1.6.9"  % "test" withSources(),
+    "org.specs2" %% "specs2"           % "1.11"   % "test" withSources(),
     "junit"                    % "junit"           % "4.8.2"  % "test" withSources(),
     "com.novocode"             % "junit-interface" % "0.7"    % "test"
   )
